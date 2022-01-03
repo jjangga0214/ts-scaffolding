@@ -1,0 +1,63 @@
+{
+  "name": "ts-scaffolding",
+  "version": "1.0.0",
+  "description": "",
+  "exports": "./dist/index.js",
+  "type": "module",
+  "engines": {
+    "node": "^12.20.0 || ^14.13.1 || >=16.0.0"
+  },
+  "private": true,
+  "scripts": {
+    "ts": "node --no-warnings --require tsconfig-paths/register --loader ts-node/esm ",
+    "lint:md": "pnpm markdownlint --fix",
+    "lint": "pnpm eslint --ext .js,.cjs,.mjs,.jsx,.ts,.tsx,.md --fix",
+    "test": "jest",
+    "postinstall": "husky install",
+    "prepublishOnly": "pinst --disable",
+    "postpublish": "pinst --enable"
+  },
+  "author": "jjangga0214",
+  "license": "Copyright (c) 2021 jjangga0214",
+  "devDependencies": {
+    "@commitlint/cli": "^16.0.1",
+    "@jjangga0214/commitlint-config": "^1.0.5",
+    "@jjangga0214/eslint-config": "^2.7.0",
+    "@jjangga0214/jest-config": "^2.3.0",
+    "@jjangga0214/markdownlint-config": "^1.0.1",
+    "@jjangga0214/prettier-config": "^2.0.1",
+    "@jjangga0214/tsconfig": "^3.2.0",
+    "@swc/core": "^1.2.125",
+    "@types/node": "^16.11.18",
+    "@typescript-eslint/eslint-plugin": "^5.8.1",
+    "eslint": "^8.6.0",
+    "eslint-import-resolver-typescript": "^2.5.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jest": "^25.3.4",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-markdown": "^2.2.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "eslint-plugin-unicorn": "^39.0.0",
+    "husky": "^7.0.4",
+    "jest": "^27.4.5",
+    "lint-staged": "^12.1.5",
+    "markdownlint-cli": "^0.30.0",
+    "pinst": "^2.1.6",
+    "prettier": "^2.5.1",
+    "ts-node": "^10.4.0",
+    "tsconfig-paths": "^3.12.0",
+    "typescript": "^4.5.4"
+  },
+  "prettier": "@jjangga0214/prettier-config",
+  "eslintConfig": {
+    "extends": "@jjangga0214/eslint-config"
+  },
+  "lint-staged": {
+    "*.{ts,js}": [
+      "pnpm lint"
+    ],
+    "*.md": []
+  }
+}
