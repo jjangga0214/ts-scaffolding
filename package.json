@@ -59,10 +59,5 @@
       "pnpm lint"
     ],
     "*.md": []
-  },
-  "commitlint": {
-    "extends": [
-      "@jjangga0214/commitlint-config"
-    ]
   }
 }
