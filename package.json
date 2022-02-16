@@ -59,9 +59,5 @@
       "pnpm lint"
     ],
     "*.md": []
-  },
-  "dependencies": {
-    "internal-ip": "^7.0.0",
-    "public-ip": "^5.0.0"
   }
 }
