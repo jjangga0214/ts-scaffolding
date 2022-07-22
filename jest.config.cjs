@@ -4,6 +4,7 @@ const { compilerOptions } = require('./tsconfig')
 
 module.exports = {
   ...getConfig(compilerOptions),
+
   // You can override other fields as well.
   // transform: {
   //   '.(ts|tsx)': 'ts-jest',
