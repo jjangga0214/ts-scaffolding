@@ -6,26 +6,26 @@
   "exports": "./dist/index.js",
   "type": "module",
   "engines": {
-    "node": "^12.20.0 || ^14.13.1 || >=16.0.0"
+    "node": ">=18.0.0",
+    "pnpm": ">=7"
   },
+  "packageManager": "pnpm@7.5.1",
   "private": true,
   "scripts": {
-    "ts": "node --no-warnings --require tsconfig-paths/register --loader ts-node/esm ",
+    "ts": "node --no-warnings --require tsconfig-paths/register --loader ts-node/esm",
     "lint": "eslint --ext .js,.cjs,.mjs,.jsx,.ts,.tsx,.md --fix",
     "lint:md": "markdownlint --fix",
     "test": "jest",
-    "postinstall": "husky install",
-    "prepublishOnly": "pinst --disable",
-    "postpublish": "pinst --enable"
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@commitlint/cli": "^16.0.1",
-    "@jjangga0214/commitlint-config": "^1.0.5",
-    "@jjangga0214/eslint-config": "^3.1.0",
-    "@jjangga0214/jest-config": "^3.1.0",
-    "@jjangga0214/markdownlint-config": "^1.0.1",
-    "@jjangga0214/prettier-config": "^2.0.1",
-    "@jjangga0214/tsconfig": "^3.2.0",
+    "@jjangga0214/commitlint-config": "^1.0.7",
+    "@jjangga0214/eslint-config": "^3.3.1",
+    "@jjangga0214/jest-config": "^4.1.0",
+    "@jjangga0214/markdownlint-config": "^1.0.3",
+    "@jjangga0214/prettier-config": "^2.0.2",
+    "@jjangga0214/tsconfig": "^3.3.0",
     "@swc/core": "^1.2.125",
     "@swc/helpers": "^0.4.3",
     "@swc/jest": "^0.2.22",
@@ -55,6 +55,10 @@
   "eslintConfig": {
     "extends": "@jjangga0214/eslint-config"
   },
+  "eslintIgnore": [
+    "node_modules",
+    "dist"
+  ],
   "lint-staged": {
     "*.{js,jsx,ts,tsx,md}": [
       "pnpm lint"

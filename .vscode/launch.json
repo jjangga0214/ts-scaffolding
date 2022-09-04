@@ -2,30 +2,30 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "node",
+      "name": "node <source>",
       "type": "node",
       "request": "launch",
-      "cwd": ".",
+      "cwd": "${fileDirname}",
       "runtimeExecutable": "node",
       "runtimeArgs": ["${input:filepath}"],
       "console": "integratedTerminal",
       "internalConsoleOptions": "neverOpen"
     },
     {
-      "name": "pnpm ts",
+      "name": "pnpm ts <file>",
       "type": "node",
       "request": "launch",
-      "cwd": ".",
+      "cwd": "${fileDirname}",
       "runtimeExecutable": "pnpm",
       "runtimeArgs": ["ts", "${input:filepath}"],
       "console": "integratedTerminal",
       "internalConsoleOptions": "neverOpen"
     },
     {
-      "name": "pnpm test --testNamePattern",
+      "name": "pnpm test --testNamePattern <pattern>",
       "type": "node",
       "request": "launch",
-      "cwd": ".",
+      "cwd": "${fileDirname}",
       "runtimeExecutable": "pnpm",
       "runtimeArgs": [
         "test",
