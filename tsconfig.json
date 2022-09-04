@@ -3,9 +3,9 @@
   "compilerOptions": {
     "outDir": "dist",
     "rootDir": ".",
-    "baseUrl": "src",
+    "baseUrl": ".",
     "paths": {
-      "#/*": ["*"]
+      "#/*": ["src/*"]
     }
   },
   "ts-node": {

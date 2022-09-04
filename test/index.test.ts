@@ -1,4 +1,4 @@
-import { add } from '../src/index'
+import { add } from '#/index.js'
 
 describe('index', () => {
   it('adds 1 and 2', () => {

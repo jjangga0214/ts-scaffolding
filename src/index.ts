@@ -1,1 +1,1 @@
-export * from '#/adder'
+export * from '#/adder.js'
