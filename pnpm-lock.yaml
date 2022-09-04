@@ -1,43 +1,43 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@commitlint/cli': ^16.3.0
-  '@jjangga0214/commitlint-config': ^1.0.8
+  '@commitlint/cli': ^16.0.1
+  '@jjangga0214/commitlint-config': ^1.0.7
   '@jjangga0214/eslint-config': ^3.3.1
-  '@jjangga0214/jest-config': ^4.1.1
+  '@jjangga0214/jest-config': ^4.1.2
   '@jjangga0214/markdownlint-config': ^1.0.3
-  '@jjangga0214/prettier-config': ^2.0.3
+  '@jjangga0214/prettier-config': ^2.0.2
   '@jjangga0214/tsconfig': ^3.3.0
-  '@swc/core': ^1.2.246
-  '@swc/helpers': ^0.4.11
+  '@swc/core': ^1.2.125
+  '@swc/helpers': ^0.4.3
   '@swc/jest': ^0.2.22
-  '@types/jest': ^28.1.8
-  '@types/node': ^16.11.56
-  '@typescript-eslint/eslint-plugin': ^5.36.1
-  '@typescript-eslint/parser': ^5.36.1
+  '@types/jest': ^28.1.6
+  '@types/node': ^16.11.18
+  '@typescript-eslint/eslint-plugin': ^5.8.1
+  '@typescript-eslint/parser': ^5.30.7
   commitizen: ^4.2.5
-  eslint: ^8.23.0
-  eslint-import-resolver-typescript: ^2.7.1
-  eslint-plugin-import: ^2.26.0
-  eslint-plugin-jest: ^25.7.0
+  eslint: ^8.6.0
+  eslint-import-resolver-typescript: ^2.5.0
+  eslint-plugin-import: ^2.25.4
+  eslint-plugin-jest: ^25.3.4
   eslint-plugin-markdown: ^2.2.1
-  eslint-plugin-prettier: ^4.2.1
+  eslint-plugin-prettier: ^4.0.0
   eslint-plugin-unicorn: ^39.0.0
   husky: ^7.0.4
-  jest: ^29.0.2
-  lint-staged: ^12.5.0
+  jest: ^29.0.0
+  lint-staged: ^12.1.5
   markdownlint-cli: ^0.30.0
   pinst: ^2.1.6
-  prettier: ^2.7.1
-  ts-node: ^10.9.1
-  tsconfig-paths: ^3.14.1
+  prettier: ^2.5.1
+  ts-node: ^10.4.0
+  tsconfig-paths: ^3.12.0
   typescript: ^4.8.2
 
 devDependencies:
   '@commitlint/cli': 16.3.0_@swc+core@1.2.246
   '@jjangga0214/commitlint-config': 1.0.8_mvnhjgejkyvzym37okkeg57pwy
   '@jjangga0214/eslint-config': 3.3.1_tvfytywkqdx6qh3am2ffrsjs7i
-  '@jjangga0214/jest-config': 4.1.1_diqpyx7ryzapr6gy2zqkwd4gku
+  '@jjangga0214/jest-config': 4.1.2_diqpyx7ryzapr6gy2zqkwd4gku
   '@jjangga0214/markdownlint-config': 1.0.3_markdownlint-cli@0.30.0
   '@jjangga0214/prettier-config': 2.0.3_prettier@2.7.1
   '@jjangga0214/tsconfig': 3.3.0_tpimtgsrwem2yl2k7om7buwd24
@@ -547,6 +547,7 @@ packages:
   /@commitlint/load/17.1.2_@swc+core@1.2.246:
     resolution: {integrity: sha512-sk2p/jFYAWLChIfOIp/MGSIn/WzZ0vkc3afw+l4X8hGEYkvDe4gQUUAVxjl/6xMRn0HgnSLMZ04xXh5pkTsmgg==}
     engines: {node: '>=v14'}
+    requiresBuild: true
     dependencies:
       '@commitlint/config-validator': 17.1.0
       '@commitlint/execute-rule': 17.0.0
@@ -1084,8 +1085,8 @@ packages:
       - supports-color
     dev: true
 
-  /@jjangga0214/jest-config/4.1.1_diqpyx7ryzapr6gy2zqkwd4gku:
-    resolution: {integrity: sha512-bPEHTWpWZMXYfEw5OfRAOxx+QH6r/KFYdtc0MKljoitVyL4erkexBqhnPpQqRyoSuAQb1MxKWk1aRCiKM5f6/w==}
+  /@jjangga0214/jest-config/4.1.2_diqpyx7ryzapr6gy2zqkwd4gku:
+    resolution: {integrity: sha512-s8u1lSPZ4NFSi+QeQDpiqYF/Fv2LkQ0mQoNmpwct+VzJ3waNRnVvn2+Rv+08rkyo7Sq1LuzqJYjPj4qDXCWuOQ==}
     peerDependencies:
       '@swc/core': '>=1.0.0'
       '@swc/jest': ^0.2.11
@@ -1371,6 +1372,7 @@ packages:
     resolution: {integrity: sha512-wi0IZLv5GC2zjZoiEDoLZraS7/ZV2Y6vnAII//Ulobvdc4zuQoceJvYvyO3IJMB0bZVoiY/fn0Ae/iEMx9PFBQ==}
     engines: {node: '>=10'}
     hasBin: true
+    requiresBuild: true
     optionalDependencies:
       '@swc/core-android-arm-eabi': 1.2.246
       '@swc/core-android-arm64': 1.2.246

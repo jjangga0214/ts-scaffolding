@@ -22,7 +22,7 @@
     "@commitlint/cli": "^16.0.1",
     "@jjangga0214/commitlint-config": "^1.0.7",
     "@jjangga0214/eslint-config": "^3.3.1",
-    "@jjangga0214/jest-config": "^4.1.0",
+    "@jjangga0214/jest-config": "^4.1.2",
     "@jjangga0214/markdownlint-config": "^1.0.3",
     "@jjangga0214/prettier-config": "^2.0.2",
     "@jjangga0214/tsconfig": "^3.3.0",
