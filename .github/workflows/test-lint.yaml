@@ -73,7 +73,7 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Test And Measure Coverage
-        run: pnpm test --coverage --ci
+        run: pnpm jest --coverage --ci
 
       - name: Lint
         run: pnpm lint .
